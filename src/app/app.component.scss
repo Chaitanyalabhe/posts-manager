@@ -1,0 +1,523 @@
+.container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-height: 500px;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+h1 {
+  font-size: 28px;
+  color: #212529;
+  font-weight: 600;
+  margin: 0;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #f5c6cb;
+  font-size: 14px;
+}
+
+.add-btn {
+  padding: 10px 24px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+.form-container {
+  background-color: #f8f9fa;
+  padding: 24px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+
+.form-container h2 {
+  color: #212529;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #495057;
+  font-size: 14px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+  background-color: white;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+button[type="submit"] {
+  padding: 10px 24px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+button[type="submit"]:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.loading {
+  padding: 40px;
+  text-align: center;
+  font-style: italic;
+  color: #6c757d;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #343a40;
+  color: white;
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+td {
+  border-bottom: 1px solid #dee2e6;
+  padding: 14px 16px;
+  color: #495057;
+  background-color: white;
+  font-size: 14px;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+// Skeleton Loading Styles
+.skeleton-container {
+  margin-top: 20px;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 4px;
+  height: 16px;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.skeleton-text-short {
+  width: 40px;
+}
+
+.skeleton-text {
+  width: 60%;
+}
+
+.skeleton-text-long {
+  width: 80%;
+}
+
+.error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  min-height: 400px;
+}
+
+.error-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+.error-title {
+  font-size: 24px;
+  color: #721c24;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+
+.error-description {
+  font-size: 16px;
+  color: #856404;
+  margin: 0 0 30px 0;
+  max-width: 500px;
+}
+
+.retry-btn {
+  padding: 12px 32px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.retry-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.retry-btn:active {
+  transform: translateY(0);
+}
+
+
+@media (max-width: 600px) {
+  .error-state {
+    padding: 40px 15px;
+    min-height: 300px;
+  }
+
+  .error-icon {
+    font-size: 48px;
+  }
+
+  .error-title {
+    font-size: 20px;
+  }
+
+  .error-description {
+    font-size: 14px;
+  }
+
+  .retry-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 30px;
+    max-width: 95%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .add-btn {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+
+  th, td {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .header-section {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .add-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .form-container {
+    padding: 16px;
+  }
+
+  .form-container h2 {
+    font-size: 18px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th, td {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+    margin: 0;
+  }
+
+  .header-section {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .add-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .error-message {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .form-container {
+    padding: 16px;
+  }
+
+  .form-container h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  input[type="text"] {
+    font-size: 16px; 
+    padding: 12px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background-color: white;
+  }
+
+  tr:hover {
+    background-color: #f8f9fa;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  td:last-child {
+    border-bottom: none;
+  }
+
+  td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 12px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: 600;
+    color: #343a40;
+  }
+
+  .skeleton-container table,
+  .skeleton-container thead,
+  .skeleton-container tbody,
+  .skeleton-container th,
+  .skeleton-container td,
+  .skeleton-container tr {
+    display: table;
+    display: table-row;
+    display: table-cell;
+  }
+
+  .skeleton-container table {
+    display: table;
+    width: 100%;
+  }
+
+  .skeleton-text {
+    width: 80%;
+  }
+
+  .skeleton-text-long {
+    width: 90%;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .form-container {
+    padding: 12px;
+  }
+
+  .form-container h2 {
+    font-size: 16px;
+  }
+
+  .add-btn,
+  button[type="submit"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  td {
+    font-size: 13px;
+    padding: 10px 12px 10px 50%;
+  }
+
+  td:before {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+    padding: 50px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  th, td {
+    padding: 16px 20px;
+    font-size: 15px;
+  }
+}
