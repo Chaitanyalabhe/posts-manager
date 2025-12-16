@@ -1,4 +1,4 @@
-# 📊 Posts Manager
+# Posts Manager
 
 <div align="center">
 
@@ -6,17 +6,17 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 
-**[🚀 View Live Demo](https://Chaitanyalabhe.github.io/posts-manager/)** | **[📂 Browse Code](https://github.com/Chaitanyalabhe/posts-manager)**
+**[View Live Demo](https://Chaitanyalabhe.github.io/posts-manager/)** | **[Browse Code](https://github.com/Chaitanyalabhe/posts-manager)**
 
 </div>
 
 ---
 
-## 🎯 Overview
+## Overview
 
 A modern Angular application for managing posts with full CRUD capabilities using the JSONPlaceholder API.
 
-### ✨ Key Features
+### Key Features
 
 - Fetch and display posts in a responsive table
 - Add new posts with form validation
@@ -26,7 +26,7 @@ A modern Angular application for managing posts with full CRUD capabilities usin
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Angular 18** - Standalone components architecture
 - **TypeScript** - Type-safe development
@@ -36,7 +36,7 @@ A modern Angular application for managing posts with full CRUD capabilities usin
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js >= 18.0.0
@@ -60,7 +60,7 @@ Navigate to `http://localhost:4200/`
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -77,7 +77,7 @@ src/
 
 ---
 
-## 🌐 API
+## API
 
 **Base URL:** `https://jsonplaceholder.typicode.com`
 
@@ -88,7 +88,7 @@ src/
 
 ---
 
-## 💡 Features Implemented
+## Features Implemented
 
 ✅ RESTful API Integration  
 ✅ Dynamic Form Handling  
@@ -99,7 +99,7 @@ src/
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 ```bash
 # Deploy to GitHub Pages
@@ -108,7 +108,7 @@ ng deploy --base-href=https://Chaitanyalabhe.github.io/posts-manager/
 
 ---
 
-## 🎨 Design Highlights
+## Design Highlights
 
 - Clean, modern interface
 - Mobile-first responsive design
@@ -117,7 +117,7 @@ ng deploy --base-href=https://Chaitanyalabhe.github.io/posts-manager/
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] Edit and delete posts
 - [ ] Search and filter functionality
@@ -127,7 +127,7 @@ ng deploy --base-href=https://Chaitanyalabhe.github.io/posts-manager/
 
 ---
 
-## 👨‍💻 Developer
+## Developer
 
 **Chaitanya Labhe**
 
@@ -138,7 +138,7 @@ Frontend Developer | Angular Specialist
 
 ---
 
-## 📄 License
+## License
 
 MIT License - feel free to use this project for learning and development.
 
